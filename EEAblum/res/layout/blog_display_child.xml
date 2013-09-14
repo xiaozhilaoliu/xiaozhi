@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:baselineAligned="true"
+    >
+    
+    <ImageView
+		    android:id="@+id/blogImage"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:focusable="false"
+			/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        
+    	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="true">	
+        
+			<TextView 
+			    android:id="@+id/bid"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textSize="1dp"
+			    android:visibility="invisible"
+			    />
+			
+		     <TextView android:id="@+id/title"
+		         android:includeFontPadding="false"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:paddingRight="6dip"
+		         android:textSize="28sp"
+		         android:textColor="#ff00FFFF"
+		         />
+		
+		     <TextView android:id="@+id/type"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:textAppearance="?android:attr/textAppearanceSmall"
+		         android:textStyle="bold"
+		         android:textColor="#ff00FF00"/>
+		
+		     <TextView android:id="@+id/tag"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_weight="1"
+		         android:paddingLeft="8dip"
+		         android:textAppearance="?android:attr/textAppearanceSmall"
+		         android:textColor="#ffff00ff"
+		         android:textStyle="bold"
+		         android:gravity="right"
+		         android:singleLine="true"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/time"
+            android:includeFontPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="1dip"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ff4b0082"/>
+    </LinearLayout>
+    
+</LinearLayout>

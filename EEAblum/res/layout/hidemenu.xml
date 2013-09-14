@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/hide"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" 
+    >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        
+        <ImageView 
+            android:src="@drawable/icon_home_small"
+            android:id="@+id/home_logo"
+            android:contentDescription="@string/home_image_contDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:paddingLeft="4dp"
+            />
+
+        <EditText 
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+        <AutoCompleteTextView 
+            android:hint="@string/serch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/serchTextView"
+            />
+
+      
+        <ImageView 
+            android:id="@+id/login"
+            android:src="@drawable/regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/home_image_login"
+            />
+        
+        <ImageView 
+            android:id="@+id/manager"
+            android:src="@drawable/regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/home_image_regist"
+            />
+    </LinearLayout>
+</LinearLayout>
+ 

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/blog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#E8E8E8"
+    >
+    <LinearLayout 
+        android:id="@+id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="#404040"
+        
+        >
+        <Button 
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:text="更多" />
+
+    </LinearLayout>
+
+       <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#404040"
+        >
+
+        <Button
+            android:layout_marginLeft="25dp"
+            android:id="@+id/blog_edimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享" />
+
+        <Button
+             android:layout_marginLeft="60dp"
+            android:id="@+id/blog_publish_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论" />
+
+        <Button
+             android:layout_marginLeft="60dp"
+            android:id="@+id/blog_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关注" 
+				/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/layout_center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/layout_top"
+        android:layout_above="@id/layout_bottom"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+      
+     <TextView
+        android:hint="正文"
+        android:id="@+id/blog_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:height="200dp"
+        android:scrollHorizontally="true"
+        android:singleLine="false"
+        />
+
+
+       <View  
+   		android:layout_width="fill_parent"  
+    	android:layout_height="2dp" 
+   		android:background="?android:attr/listDivider"  
+		/>  
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical" 
+          android:gravity="center_horizontal|center_vertical">
+
+          <TextView
+              android:id="@+id/blog_discuss"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:hint="快来添加第一条评论吧"
+              android:padding="20dp"
+              android:textColor="#030303"
+              android:textSize="15dp" />
+
+          <View  
+   		android:layout_width="fill_parent"  
+    	android:layout_height="2dp" 
+   		android:background="?android:attr/listDivider"  
+		/>  
+      </LinearLayout>
+
+      <RatingBar
+          style="?android:attr/ratingBarStyleIndicator"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+           />
+
+    </LinearLayout>
+
+ 
+</RelativeLayout>
